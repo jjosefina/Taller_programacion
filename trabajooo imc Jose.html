@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>IMC</title>
+    
+    <script>
+        let peso = document.getElementsByClassName("peso")[0]
+        let altura = document.getElementsByClassName("altura")[0]
+
+        const presionar = (e) => {
+        
+            console.log(peso)
+        }
+
+        console.log(peso)
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(rgb(rgb(255, 0, 170)));
+            /* Fondo rosa */
+            background-image: url("https://t3.ftcdn.net/jpg/06/16/34/92/360_F_616349295_hw3oZYyNeRrz2s1h2n6x5fBLwHUA4Gpw.jpg");
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #5a5a5a;
+        }
+
+        span {
+            color: white;
+        }
+
+        .contenedor {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .contenedor2 {
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contendor2">
+            <h1>Calculadora IMC</h1>
+            <span>Altura</span>
+            <input type="text" class="altura" placeholder="Pone tu altura en metros">
+
+            <span>Peso</span>
+            <input type="text" class="peso" placeholder="Pone tu peso en kilogramos">
+
+            <button onclick="presionar()">
+                Calcular
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
