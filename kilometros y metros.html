@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+    
+    <input type="number">
+    <select id="de">
+        <option value="cn">centimetros</option>
+        <option value="m">metros</option>
+        <option value="km">kilometros</option>
+    </select>
+    <select id="a">
+        <option value="cn">centimetros</option>
+        <option value="m">metros</option>
+        <option value="km">kilometros</option>
+    </select>
+</center>
+</body>
+</html>
+<div>
+<script 
+<script>
+        function convertir() {
+            const valorInput = document.getElementById("valor").value;
+            const de = document.getElementById("de").value;
+            const a = document.getElementById("a").value;
+            if (valorInput === "") {
+                alert("Por favor ingresa un valor.");
+                return;
+            }
+            let valor = parseFloat(valorInput);
+            let resultado = 0;
+            // Convertir a metros
+            if (de === "cm") valor = valor / 100;
+            if (de === "km") valor = valor * 1000;
+            // Convertir a unidad destino
+            if (a === "cm") resultado = valor * 100;
+            if (a === "m") resultado = valor;
+            if (a === "km") resultado = valor / 1000;
+            document.getElementById("resultado").innerText = resultado;
+        }
+    </script>
